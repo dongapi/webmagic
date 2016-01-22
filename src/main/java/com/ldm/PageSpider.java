@@ -27,7 +27,6 @@ public class PageSpider implements PageProcessor {
 	  * @throws
 	  * @date 2016年1月14日 上午10:19:43
 	  */
-	@Override
 	public Site getSite() {
 		return this.site;
 	}
@@ -39,7 +38,6 @@ public class PageSpider implements PageProcessor {
 	  * @throws
 	  * @date 2016年1月14日 上午10:19:43
 	  */
-	@Override
 	public void process(Page page) {
 		
 		page.putField("title", page.getHtml().xpath("//a/text()").toString());
