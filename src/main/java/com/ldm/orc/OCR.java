@@ -101,7 +101,7 @@ public class OCR {
         pb.directory(imageFile.getParentFile());
 
         cmd.set(1, imageFile.getAbsolutePath()/* tempImage.getName() */);
-        System.out.println("cmd:"+cmd.toString());
+//        System.out.println("cmd:"+cmd.toString());
         pb.command(cmd);
         pb.redirectErrorStream(true);
 

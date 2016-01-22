@@ -11,15 +11,19 @@ public class Test {
      * @param args
      */
     public static void main(String[] args) {
-        String path = "C:/Users/Administrator/Desktop/111/60.jpg";
-        try {
-            String valCode = new OCR().recognizeText(new File(path), null);
-            System.out.println(valCode);
-        } catch (IOException e) {
-            e.printStackTrace();
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
+    	
+    	for(int i=1;i<8;i++){
+    		String path = "pics/"+i+".jpg";
+			try {
+				String valCode = new OCR().recognizeText(new File(path), null);
+				System.out.println(i+".jpg:"+valCode.trim());
+			} catch (IOException e) {
+				e.printStackTrace();
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+    	}
+    	
     }
 
 }
