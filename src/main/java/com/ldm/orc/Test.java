@@ -11,9 +11,9 @@ public class Test {
      * @param args
      */
     public static void main(String[] args) {
-        String path = "C:\\Users\\Administrator\\Desktop\\111\\2.jpg";
+        String path = "C:/Users/Administrator/Desktop/111/60.jpg";
         try {
-            String valCode = new OCR().recognizeText(new File(path), "jpg");
+            String valCode = new OCR().recognizeText(new File(path), null);
             System.out.println(valCode);
         } catch (IOException e) {
             e.printStackTrace();

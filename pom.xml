@@ -53,6 +53,5 @@
 				</configuration>
 			</plugin>
 		</plugins>
-		<finalName>banktax</finalName>
 	</build>
 </project>

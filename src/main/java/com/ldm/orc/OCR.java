@@ -70,14 +70,14 @@ public class OCR {
             }
 
 
-        File file = new File(imageFile.getParentFile(), "temp.jpg");
-        ImageIO.write(image, "JPEG", file);
-        BufferedImage image_ex;
-        image_ex = ImageIO.read(imageFile);
-        ImageFilter filter = new ImageFilter(image_ex);
-        ;
-        File file_ex = new File(imageFile.getParentFile(), "temp_ex.jpg");
-        ImageIO.write(filter.lineGrey(), "JPEG", file_ex);
+//        File file = new File(imageFile.getParentFile(), "temp.jpg");
+//        ImageIO.write(image, "JPEG", file);
+//        BufferedImage image_ex;
+//        image_ex = ImageIO.read(imageFile);
+//        ImageFilter filter = new ImageFilter(image_ex);
+//        ;
+//        File file_ex = new File(imageFile.getParentFile(), "temp_ex.jpg");
+//        ImageIO.write(filter.lineGrey(), "JPEG", file_ex);
 
         File outputFile = new File(imageFile.getParentFile(), "output");
         StringBuffer strB = new StringBuffer();
